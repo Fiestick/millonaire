@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/style/App.css';
+import {MainPage} from './pages/MainPage'
+import {QuestionsPage} from './pages/QuestionsPage'
+import {FinalePage} from './pages/FinalePage'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 
 function App() {
+
+  const [score, setScore] = React.useState<number>(0)
+
+  const getScore = (score: number) => {
+    setScore(score)
+  }
+
+  const props = {
+    score: getScore
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact>
+          <MainPage />
+        </Route>
+        <Route path="/question" exact>
+          <QuestionsPage getScore={getScore} />
+        </Route>
+        <Route  path="/final"  exact>
+          <FinalePage score={score} />
+        </Route>
+      </Switch>
+      <Redirect to="/" />
+    </BrowserRouter>
   );
 }
 

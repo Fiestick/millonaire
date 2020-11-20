@@ -1,0 +1,62 @@
+.answer-value-button{
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.answer-value-button__bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.answer-value-button__bg::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--black_40);
+  position: absolute;
+  top: calc(50% - 2px);
+  z-index: -1;
+  transform: translate(0, 50%);
+}
+
+.answer-value-button__bg svg{
+  width: 100%;
+}
+
+.answer-value-button__bg path{
+	stroke: var(--black_40);
+	fill: var(--white_100);
+}
+
+.answer-value-button__value{
+  position: relative;
+  z-index: 3;
+}
+
+.answer-value-button.active .answer-value-button__value{
+  color: var(--orange_100)
+}
+
+.answer-value-button.active .answer-value-button__bg path{
+	stroke: var(--orange_100);
+}
+
+.answer-value-button.done .answer-value-button__value{
+  color: var(--black_40)
+}
+
+.answer-value-button.done .answer-value-button__bg path{
+	stroke: var(--black_40);
+}
+
+
+

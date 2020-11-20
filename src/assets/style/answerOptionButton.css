@@ -1,0 +1,63 @@
+.answer-option-button{
+	width: 50%;
+	padding: 0 48px;
+	height: 72px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-top: 32px;
+}
+
+.answer-option-button__bg{
+	position: absolute;
+	width: 100%;
+	height: 72px;
+	top: 0;
+	left: 0;
+}
+
+.answer-option-button:hover .answer-option-button__bg path{
+	stroke: var(--orange_100);
+}
+
+.answer-option-button__bg svg{
+	width: 100%;
+}
+
+.answer-option-button__bg path{
+	stroke: var(--black_40);
+	fill: var(--white_100);
+	transition: 0.3s;
+}
+
+.answer-option-button__body{
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	z-index: 1;
+}
+
+.answer-option-button__index{
+	margin-right: 8px;
+}
+
+.answer-option-button input{
+	display: none;
+}
+
+.answer-option-button input:checked + .answer-option-button__bg path{
+	stroke: var(--orange_100);
+	fill: var(--orange_5);
+}
+
+.answer-option-button.correct .answer-option-button__bg svg path{
+	stroke: var(--green_100);
+	fill: var(--green_5);
+}
+
+.answer-option-button.wrong .answer-option-button__bg svg path{
+	stroke: var(--red_100);
+	fill: var(--red_5);
+}
