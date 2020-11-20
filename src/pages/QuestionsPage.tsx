@@ -25,12 +25,15 @@ const answerOptionsResetList: Array<AnswerOptions> = [
 let checkString = ''
 
 export const QuestionsPage:React.FC<QuestionsPageComponent> = ( prop ) => {
-  
+  const classActive = ['questions-page__score']
+  const classActiveMobBtm = ['mobBtm']
   const user:User = JSON.parse(data)
   const [question, setQuestion ] = React.useState<Question[]>(user.questions)
   const [questionActive, setQuestionActive] = React.useState<Question>(questionActiveReset)
   const [answerOptions, setAnswerOptions] = React.useState<Array<AnswerOptions>>(answerOptionsResetList)
+  const [active, setActive] = React.useState<Boolean>(false)
   const history = useHistory()
+
   useEffect(() => {
     for(let activeQuestion of question){
       if(!activeQuestion.completed){
@@ -41,7 +44,7 @@ export const QuestionsPage:React.FC<QuestionsPageComponent> = ( prop ) => {
         break
       } 
     }
-  },)
+  })
   
   const selectValue = (checked: boolean, value: string) => {
     if(!checked){
@@ -207,6 +210,18 @@ export const QuestionsPage:React.FC<QuestionsPageComponent> = ( prop ) => {
     return list
   }
 
+  const togleActive = () => {
+    setActive(!active)
+  }
+
+  if(active){
+    classActive.push('active')
+    classActiveMobBtm.push('active')
+  } else {
+    classActive.filter(item => !item == active)
+    classActiveMobBtm.filter(item => !item == active)
+  }
+
   if(questionActive){
     return (
       <div className="container-fluid gray">
@@ -233,7 +248,7 @@ export const QuestionsPage:React.FC<QuestionsPageComponent> = ( prop ) => {
               })}
             </form>
           </div>
-          <div className="questions-page__score">
+          <div className={classActive.join(' ')}>
             {question.map( (param, i) => {
                 return (
                   <AnswerValue 
@@ -248,6 +263,9 @@ export const QuestionsPage:React.FC<QuestionsPageComponent> = ( prop ) => {
                   />
                 )
               })}
+          </div>
+          <div className={classActiveMobBtm.join(' ')} onClick={togleActive}>
+            <span></span>
           </div>
         </div>
       </div>

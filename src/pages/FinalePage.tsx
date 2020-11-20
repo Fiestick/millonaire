@@ -15,7 +15,7 @@ export const FinalePage:React.FC<{score: number}> = ( {score} ) => {
               <h2 className="gray">Total score:</h2>
               <h1>${score} earned</h1>
             </div>
-            <NavLink to="/" className="action-button margit-top">Try again</NavLink>
+            <NavLink to="/" className="action-button margin-top">Try again</NavLink>
           </div>
         </div>
       </div>

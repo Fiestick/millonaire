@@ -14,7 +14,7 @@ export const MainPage:React.FC = () => {
           </div>
           <div className="main-page__content">
             <h1>Who wants to be a millionaire?</h1>
-            <NavLink to="/question" className="action-button margit-top">Start</NavLink>
+            <NavLink to="/question" className="action-button margin-top">Start</NavLink>
           </div>
         </div>
       </div>

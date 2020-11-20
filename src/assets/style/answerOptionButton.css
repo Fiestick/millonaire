@@ -61,3 +61,22 @@
 	stroke: var(--red_100);
 	fill: var(--red_5);
 }
+
+@media all and (max-width: 1100px){
+  .answer-option-button{
+		width: 100%;
+		max-width: 397px;
+		margin-top: 8px;
+		justify-content: flex-start;
+	}
+	.answer-option-button:hover .answer-option-button__bg path{
+		stroke: var(--black_40);
+	}
+}
+
+@media all and (max-width: 400px){
+	.answer-option-button{
+		margin-top: 0px;
+	}
+
+}

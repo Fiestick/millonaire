@@ -1,0 +1,8 @@
+{
+  "short_name": "Game",
+  "name": "Millionaire game",
+  "start_url": ".",
+  "display": "  ",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
