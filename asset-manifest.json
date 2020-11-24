@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/millonaire/build/static/css/main.96a19045.chunk.css",
-    "main.js": "/millonaire/build/static/js/main.1314ef6e.chunk.js",
-    "main.js.map": "/millonaire/build/static/js/main.1314ef6e.chunk.js.map",
-    "runtime-main.js": "/millonaire/build/static/js/runtime-main.c3911db7.js",
-    "runtime-main.js.map": "/millonaire/build/static/js/runtime-main.c3911db7.js.map",
-    "static/js/2.6c9109a1.chunk.js": "/millonaire/build/static/js/2.6c9109a1.chunk.js",
-    "static/js/2.6c9109a1.chunk.js.map": "/millonaire/build/static/js/2.6c9109a1.chunk.js.map",
-    "static/js/3.5ee04956.chunk.js": "/millonaire/build/static/js/3.5ee04956.chunk.js",
-    "static/js/3.5ee04956.chunk.js.map": "/millonaire/build/static/js/3.5ee04956.chunk.js.map",
-    "index.html": "/millonaire/build/index.html",
-    "static/css/main.96a19045.chunk.css.map": "/millonaire/build/static/css/main.96a19045.chunk.css.map",
-    "static/js/2.6c9109a1.chunk.js.LICENSE.txt": "/millonaire/build/static/js/2.6c9109a1.chunk.js.LICENSE.txt",
-    "static/media/hand.24979c70.png": "/millonaire/build/static/media/hand.24979c70.png"
+    "main.css": "/millonaire/static/css/main.96a19045.chunk.css",
+    "main.js": "/millonaire/static/js/main.1314ef6e.chunk.js",
+    "main.js.map": "/millonaire/static/js/main.1314ef6e.chunk.js.map",
+    "runtime-main.js": "/millonaire/static/js/runtime-main.089f8dc3.js",
+    "runtime-main.js.map": "/millonaire/static/js/runtime-main.089f8dc3.js.map",
+    "static/js/2.6c9109a1.chunk.js": "/millonaire/static/js/2.6c9109a1.chunk.js",
+    "static/js/2.6c9109a1.chunk.js.map": "/millonaire/static/js/2.6c9109a1.chunk.js.map",
+    "static/js/3.5ee04956.chunk.js": "/millonaire/static/js/3.5ee04956.chunk.js",
+    "static/js/3.5ee04956.chunk.js.map": "/millonaire/static/js/3.5ee04956.chunk.js.map",
+    "index.html": "/millonaire/index.html",
+    "static/css/main.96a19045.chunk.css.map": "/millonaire/static/css/main.96a19045.chunk.css.map",
+    "static/js/2.6c9109a1.chunk.js.LICENSE.txt": "/millonaire/static/js/2.6c9109a1.chunk.js.LICENSE.txt",
+    "static/media/hand.24979c70.png": "/millonaire/static/media/hand.24979c70.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3911db7.js",
+    "static/js/runtime-main.089f8dc3.js",
     "static/js/2.6c9109a1.chunk.js",
     "static/css/main.96a19045.chunk.css",
     "static/js/main.1314ef6e.chunk.js"
